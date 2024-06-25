@@ -1,4 +1,5 @@
-
+from raygine import Engine, Settings
 
 if __name__ == "__main__":
-    print("MAIN.PY")
+    eng = Engine(Settings())
+    eng.run()
