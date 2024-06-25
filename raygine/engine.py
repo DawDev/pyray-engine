@@ -3,9 +3,10 @@ from typing import NoReturn
 import sys
 import raylibpy as rp
 from .settings import Settings
+from .singleton import Singleton
 
 
-class Engine:
+class Engine(metaclass=Singleton):
     def __init__(self, settings: Settings) -> None:
         self._settings: Settings = settings
         rp.init_window(settings.WINDOW_WIDTH, settings.WINDOW_HEIGHT, settings.WINDOW_CAPTION)
