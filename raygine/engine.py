@@ -24,3 +24,4 @@ class Engine(metaclass=Singleton):
     def exit() -> NoReturn:
         # rp.close_audio_device()
         rp.close_window()
+        sys.exit()

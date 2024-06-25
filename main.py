@@ -1,5 +1,7 @@
-from raygine import Engine, Settings
+import raygine
+
 
 if __name__ == "__main__":
-    eng = Engine(Settings())
+    raygine.init(raygine.Settings())
+    eng = raygine.get_engine()
     eng.run()
